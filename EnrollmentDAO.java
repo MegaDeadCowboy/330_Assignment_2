@@ -47,7 +47,7 @@ public class EnrollmentDAO {
 
             ResultSet result = stmt.executeQuery();
 
-            return result.next(); // Returns true if student is already enrolled
+            return result.next();
 
         } catch (SQLException e) {
             throw new RuntimeException("Error checking enrollment!", e);
